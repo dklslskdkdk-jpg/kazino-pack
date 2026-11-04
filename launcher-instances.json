@@ -40,6 +40,21 @@
         ]
       },
       "access": null
+    },
+    {
+      "id": "crewsafio",
+      "name": "CREW SAFIO",
+      "description": "",
+      "visibility": "public",
+      "viewers": [],
+      "theme": null,
+      "access": {
+        "schema": 1,
+        "mode": "closed",
+        "message": "CREW SAFIO todavía no está disponible. El estudio avisará cuando puedas entrar.",
+        "opensAt": null,
+        "allowed": []
+      }
     }
   ]
 }
