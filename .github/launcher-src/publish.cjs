@@ -3,7 +3,7 @@ const envelope=JSON.parse(fs.readFileSync('.github/launcher-src/app-update.json'
 const key='-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAA7tvH/gEhberzShs0/P80rRHIrANeBWYbhMmCAmRlcY=\n-----END PUBLIC KEY-----';
 if(!crypto.verify(null,data,key,Buffer.from(envelope.signature,'base64')))throw Error('Invalid update signature');
 const m=JSON.parse(data),repo=process.env.GITHUB_REPOSITORY;
-if(m.kind!=='blu-studio-app'||m.version!=='0.4.20'||m.url!==`https://github.com/${repo}/releases/download/v${m.version}/Bluu-Client.exe`)throw Error('Invalid release metadata');
+if(m.kind!=='blu-studio-app'||m.version!=='0.4.21'||m.url!==`https://github.com/${repo}/releases/download/v${m.version}/Bluu-Client.exe`)throw Error('Invalid release metadata');
 const run=args=>cp.execFileSync('gh',args,{stdio:'inherit'});
 run(['release','download','v'+m.version,'-R',repo,'-p','Bluu-Client.exe']);
 if(crypto.createHash('sha256').update(fs.readFileSync('Bluu-Client.exe')).digest('hex')!==m.sha256)throw Error('Binary digest mismatch');
