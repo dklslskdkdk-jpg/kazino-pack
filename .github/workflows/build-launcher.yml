@@ -15,6 +15,8 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
+      - name: Test native Windows updater end to end
+        run: node .github/launcher-src/windows-update-test.cjs
       - name: Build Windows launcher and draft release
         run: node .github/launcher-src/build.cjs
         env:
@@ -22,4 +24,4 @@ jobs:
           ELECTRON_SKIP_BINARY_DOWNLOAD: '1'
           CSC_IDENTITY_AUTO_DISCOVERY: 'false'
           ELECTRON_BUILDER_COMPRESSION_LEVEL: '1'
-# Release 0.4.13: clean managed temporary update executables.
+# Release 0.4.14: acknowledged and Windows-tested updates.
