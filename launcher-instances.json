@@ -1,0 +1,14 @@
+{
+  "schema": 1,
+  "instances": [
+    {
+      "id": "kazino",
+      "name": "KAZINO",
+      "description": "La instancia original del estudio.",
+      "visibility": "public",
+      "viewers": [],
+      "theme": null,
+      "access": null
+    }
+  ]
+}
