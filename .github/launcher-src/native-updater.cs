@@ -33,9 +33,9 @@ public static class BluUpdater {
   if(!done)throw new Exception("Windows no permitió reemplazar el EXE. Se conserva el anterior. "+(last==null?"":last.Message));
   Result("starting","Abriendo y comprobando el launcher actualizado.");using(var opened=StartLauncher()){}
   bool confirmed=false;for(int i=0;i<120;i++){try{var receipt=json.Deserialize<Dictionary<string,object>>(File.ReadAllText(Path.Combine(root,"update-confirmed.json"),Encoding.UTF8));if(Text(receipt,"nonce")==nonce&&Text(receipt,"sha256").Equals(expected,StringComparison.OrdinalIgnoreCase)&&Text(receipt,"version")==version){confirmed=true;break;}}catch{}Thread.Sleep(500);}
-  if(!confirmed)throw new Exception("Se reemplazó el EXE, pero no confirmó su apertura. Abre Blu Studio desde su carpeta y revisa el aviso de Windows.");
+  if(!confirmed)throw new Exception("Se reemplazó el EXE, pero no confirmó su apertura. Abre Bluu Client desde su carpeta y revisa el aviso de Windows.");
   Remove(backup);Remove(source);Remove(staged);Remove(Path.Combine(Path.GetDirectoryName(source),"actualizacion-error.txt"));Result("complete","Actualización instalada y apertura comprobada.");return 0;
- }catch(Exception error){try{if(!String.IsNullOrEmpty(root)){Result("error",error.Message);File.WriteAllText(Path.Combine(root,"updater-last-error.txt"),error.Message,Encoding.UTF8);}if(!String.IsNullOrEmpty(source))File.WriteAllText(Path.Combine(Path.GetDirectoryName(source),"actualizacion-error.txt"),error.Message,Encoding.UTF8);}catch{}if(showErrors)MessageBox.Show(error.Message,"Actualización de Blu Studio",MessageBoxButtons.OK,MessageBoxIcon.Error);return 1;
+ }catch(Exception error){try{if(!String.IsNullOrEmpty(root)){Result("error",error.Message);File.WriteAllText(Path.Combine(root,"updater-last-error.txt"),error.Message,Encoding.UTF8);}if(!String.IsNullOrEmpty(source))File.WriteAllText(Path.Combine(Path.GetDirectoryName(source),"actualizacion-error.txt"),error.Message,Encoding.UTF8);}catch{}if(showErrors)MessageBox.Show(error.Message,"Actualización de Bluu Client",MessageBoxButtons.OK,MessageBoxIcon.Error);return 1;
  }finally{if(!String.IsNullOrEmpty(source))Remove(source);if(!String.IsNullOrEmpty(staged))Remove(staged);if(!String.IsNullOrEmpty(root))Remove(Path.Combine(root,"updater-ready.json"));}
  }
 }
