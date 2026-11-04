@@ -9,6 +9,21 @@
       "viewers": [],
       "theme": null,
       "access": null
+    },
+    {
+      "id": "crewsafio",
+      "name": "CrewSafio",
+      "description": "",
+      "visibility": "public",
+      "viewers": [],
+      "theme": null,
+      "access": {
+        "schema": 1,
+        "mode": "closed",
+        "message": "Kazino todavía no está disponible. El estudio avisará cuando puedas entrar.",
+        "opensAt": null,
+        "allowed": []
+      }
     }
   ]
 }
