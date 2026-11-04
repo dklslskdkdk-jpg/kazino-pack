@@ -22,4 +22,4 @@ jobs:
           ELECTRON_SKIP_BINARY_DOWNLOAD: '1'
           CSC_IDENTITY_AUTO_DISCOVERY: 'false'
           ELECTRON_BUILDER_COMPRESSION_LEVEL: '1'
-# Release 0.4.12: mandatory signed updates and admin-only update settings.
+# Release 0.4.13: clean managed temporary update executables.
