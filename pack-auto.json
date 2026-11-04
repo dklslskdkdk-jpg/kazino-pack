@@ -1,26 +1,26 @@
 {
   "minecraft": "1.20.1",
   "forge": "47.4.0",
-  "version": "9dbe998b7d5a7e3355245aa61209c7547f87ef30",
+  "version": "6495bde366f2c53072eeac1e9d29fdf65981b199",
   "mods": [
     {
       "file": "CrewSafio-Hearts-Forge-1.20.1-1.0.0.jar",
-      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/9dbe998b7d5a7e3355245aa61209c7547f87ef30/mods/CrewSafio-Hearts-Forge-1.20.1-1.0.0.jar",
+      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/6495bde366f2c53072eeac1e9d29fdf65981b199/mods/CrewSafio-Hearts-Forge-1.20.1-1.0.0.jar",
       "sha256": "d3eb58ed3b5f1401f93737b329cbfcb8e0bcef17eb9a16717d017bf0d79d6d81"
     },
     {
       "file": "Pehkui-3.8.2+1.20.1-forge.jar",
-      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/9dbe998b7d5a7e3355245aa61209c7547f87ef30/mods/Pehkui-3.8.2%2B1.20.1-forge.jar",
+      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/6495bde366f2c53072eeac1e9d29fdf65981b199/mods/Pehkui-3.8.2%2B1.20.1-forge.jar",
       "sha256": "54210f454c166f65a1bcbbfe4ea52e6f73e07844a793c7132f1af4076a0f42fc"
     },
     {
       "file": "geckolib-forge-1.20.1-4.8.4.jar",
-      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/9dbe998b7d5a7e3355245aa61209c7547f87ef30/mods/geckolib-forge-1.20.1-4.8.4.jar",
+      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/6495bde366f2c53072eeac1e9d29fdf65981b199/mods/geckolib-forge-1.20.1-4.8.4.jar",
       "sha256": "c04abba4fd354dd8c0e8a732f1f05f4dca893d2e1d962b2ab128bbd411478747"
     },
     {
       "file": "morpher.jar",
-      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/9dbe998b7d5a7e3355245aa61209c7547f87ef30/mods/morpher.jar",
+      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/6495bde366f2c53072eeac1e9d29fdf65981b199/mods/morpher.jar",
       "sha256": "7a22b31a6a8d1faab91d0dbd5c2e19b05f79359a1ff6f4cd3de1417be95b3274"
     }
   ],
