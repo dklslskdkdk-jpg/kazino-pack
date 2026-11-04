@@ -26,4 +26,4 @@ jobs:
           ELECTRON_SKIP_BINARY_DOWNLOAD: '1'
           CSC_IDENTITY_AUTO_DISCOVERY: 'false'
           ELECTRON_BUILDER_COMPRESSION_LEVEL: '1'
-# Release 0.4.19: remove screenshot folder setting.
+# Release 0.4.20: Bluu Client transparent Windows icon, animated GIF assets and removed manual-download button.
