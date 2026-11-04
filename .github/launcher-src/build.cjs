@@ -1,0 +1,17 @@
+const fs=require('fs'),path=require('path'),cp=require('child_process'),crypto=require('crypto');
+const root=process.cwd(),work=path.join(root,'launcher-build');fs.mkdirSync(work,{recursive:true});
+const run=(cmd,args,cwd=work)=>cp.execFileSync(cmd,args,{cwd,stdio:'inherit',shell:cmd==='npm'});
+run('gh',['release','download','v0.4.9','-R',process.env.GITHUB_REPOSITORY,'-p','BluStudio-Launcher.exe','-D',work]);
+const unpack=path.join(work,'runtime');run('7z',['x',path.join(work,'BluStudio-Launcher.exe'),'-o'+unpack,'-y']);
+function walk(dir){return fs.readdirSync(dir,{withFileTypes:true}).flatMap(e=>e.isDirectory()?walk(path.join(dir,e.name)):[path.join(dir,e.name)]);}
+let files=walk(unpack),asarFile=files.find(p=>p.endsWith(path.join('resources','app.asar')));
+if(!asarFile){for(const archive of files.filter(p=>p.endsWith('.7z'))){run('7z',['x',archive,'-o'+unpack,'-y']);}asarFile=walk(unpack).find(p=>p.endsWith(path.join('resources','app.asar')));}
+if(!asarFile)throw Error('Missing runtime app.asar');
+const runtime=path.dirname(path.dirname(asarFile)),src=JSON.parse(fs.readFileSync(path.join(root,'.github/launcher-src/source.json'),'utf8'));
+fs.writeFileSync(path.join(work,'package.json'),src['package.json']);
+run('npm',['install','--ignore-scripts','--no-audit','--no-fund']);
+const asar=require(path.join(work,'node_modules','@electron','asar')),app=path.join(work,'app');asar.extractAll(asarFile,app);
+for(const [name,data] of Object.entries(src)){fs.writeFileSync(path.join(app,name),data);if(name==='build-portable.cjs')fs.writeFileSync(path.join(work,name),data);}
+fs.cpSync(path.join(app,'assets'),path.join(work,'assets'),{recursive:true});
+for(const p of walk(runtime)){if(path.basename(p).startsWith('.BluStudio-Launcher.exe')||(path.dirname(p).endsWith('locales')&&!['es.pak','es-419.pak','en-US.pak'].includes(path.basename(p))))fs.unlinkSync(p);}
+(async()=>{fs.unlinkSync(asarFile);await asar.createPackage(app,asarFile);const out=path.join(work,'release');run(process.execPath,[path.join(work,'build-portable.cjs'),'--prepackaged',runtime,'--output',out]);const exe=path.join(out,'BluStudio-Launcher.exe');const data=fs.readFileSync(exe);if(data.toString('ascii',0,2)!=='MZ')throw Error('Invalid executable');const meta={kind:'blu-studio-app',version:'0.4.10',url:'https://github.com/'+process.env.GITHUB_REPOSITORY+'/releases/download/v0.4.10/BluStudio-Launcher.exe',sha256:crypto.createHash('sha256').update(data).digest('hex')};fs.writeFileSync(path.join(root,'.github/launcher-src/build.json'),JSON.stringify(meta,null,2)+'\n');run('gh',['release','create','v0.4.10',exe,'--draft','--title','Blu Studio','--notes','Mejoras de inicio, rendimiento, imágenes y acceso directo.','-R',process.env.GITHUB_REPOSITORY]);run('git',['config','user.name','github-actions[bot]'],root);run('git',['config','user.email','41898282+github-actions[bot]@users.noreply.github.com'],root);run('git',['add','.github/launcher-src/build.json'],root);run('git',['commit','-m','Record signed-release build digest for 0.4.10'],root);run('git',['pull','--rebase'],root);run('git',['push'],root);})().catch(e=>{console.error(e);process.exit(1)});
