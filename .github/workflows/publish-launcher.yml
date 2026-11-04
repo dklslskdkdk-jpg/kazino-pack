@@ -1,0 +1,19 @@
+name: Publish verified Blu Studio update
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/launcher-src/app-update.json'
+permissions:
+  contents: write
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node .github/launcher-src/publish.cjs
+        env:
+          GH_TOKEN: ${{ github.token }}
