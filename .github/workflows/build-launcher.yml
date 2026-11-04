@@ -26,4 +26,4 @@ jobs:
           ELECTRON_SKIP_BINARY_DOWNLOAD: '1'
           CSC_IDENTITY_AUTO_DISCOVERY: 'false'
           ELECTRON_BUILDER_COMPRESSION_LEVEL: '1'
-# Verify updater survives the actual bootstrap parent exit.
+# Use native GUI updater executable, not a detached PowerShell host.
