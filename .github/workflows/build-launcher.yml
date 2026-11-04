@@ -26,4 +26,4 @@ jobs:
           ELECTRON_SKIP_BINARY_DOWNLOAD: '1'
           CSC_IDENTITY_AUTO_DISCOVERY: 'false'
           ELECTRON_BUILDER_COMPRESSION_LEVEL: '1'
-# Confirm canonical executable identity across Windows 8.3 path aliases.
+# Release 0.4.18: reversible player preview with admin actions and owner bypass disabled.
