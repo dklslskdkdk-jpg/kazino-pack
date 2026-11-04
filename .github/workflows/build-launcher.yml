@@ -17,7 +17,7 @@ jobs:
           node-version: '22'
       - name: Test access decisions before any pack download
         run: node --test .github/launcher-src/access-test.cjs
-      - name: Test instance isolation and visibility
+      - name: Test instance isolation, visibility and scoped access notices
         run: node --test .github/launcher-src/instances-test.cjs
       - name: Test native Windows updater end to end
         run: node .github/launcher-src/windows-update-test.cjs
