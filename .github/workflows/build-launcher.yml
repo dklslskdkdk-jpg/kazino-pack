@@ -1,0 +1,24 @@
+name: Build Blu Studio launcher
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/build-launcher.yml'
+permissions:
+  contents: write
+jobs:
+  build:
+    runs-on: windows-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Build Windows launcher and draft release
+        run: node .github/launcher-src/build.cjs
+        env:
+          GH_TOKEN: ${{ github.token }}
+          ELECTRON_SKIP_BINARY_DOWNLOAD: '1'
+          CSC_IDENTITY_AUTO_DISCOVERY: 'false'
+          ELECTRON_BUILDER_COMPRESSION_LEVEL: '1'
