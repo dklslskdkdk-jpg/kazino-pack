@@ -5,7 +5,7 @@
       "id": "kazino",
       "name": "KAZINO",
       "description": "La instancia original del estudio.",
-      "visibility": "public",
+      "visibility": "owner",
       "viewers": [],
       "theme": {
         "studio": "BLU STUDIOS",
