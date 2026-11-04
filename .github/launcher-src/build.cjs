@@ -7,10 +7,11 @@ function walk(dir){return fs.readdirSync(dir,{withFileTypes:true}).flatMap(e=>e.
 let files=walk(unpack),asarFile=files.find(p=>p.endsWith(path.join('resources','app.asar')));
 if(!asarFile){for(const archive of files.filter(p=>p.endsWith('.7z'))){run('7z',['x',archive,'-o'+unpack,'-y']);}asarFile=walk(unpack).find(p=>p.endsWith(path.join('resources','app.asar')));}
 if(!asarFile)throw Error('Missing runtime app.asar');
+fs.rmSync(path.join(unpack,'$PLUGINSDIR'),{recursive:true,force:true});
 const runtime=path.dirname(path.dirname(asarFile)),src=JSON.parse(fs.readFileSync(path.join(root,'.github/launcher-src/source.json'),'utf8'));
 fs.writeFileSync(path.join(work,'package.json'),src['package.json']);
 run('npm',['install','--ignore-scripts','--no-audit','--no-fund']);
-const asar=require(path.join(work,'node_modules','@electron','asar')),app=path.join(work,'app');asar.extractAll(asarFile,app);
+const asar=require(path.join(work,'node_modules','@electron','asar')),app=path.join(work,'extracted-app');asar.extractAll(asarFile,app);
 for(const [name,data] of Object.entries(src)){fs.writeFileSync(path.join(app,name),data);if(name==='build-portable.cjs')fs.writeFileSync(path.join(work,name),data);}
 fs.cpSync(path.join(app,'assets'),path.join(work,'assets'),{recursive:true});
 for(const p of walk(runtime)){if(path.basename(p).startsWith('.BluStudio-Launcher.exe')||(path.dirname(p).endsWith('locales')&&!['es.pak','es-419.pak','en-US.pak'].includes(path.basename(p))))fs.unlinkSync(p);}
