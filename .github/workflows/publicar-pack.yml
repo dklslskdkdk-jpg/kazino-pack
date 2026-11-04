@@ -30,18 +30,16 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - name: Verificar y firmar archivos autorizados
-        env:
-          KAZINO_SIGNING_KEY: ${{ secrets.KAZINO_SIGNING_KEY }}
+      - name: Verificar archivos autorizados
         run: node .github/scripts/publish-pack.cjs
-      - name: Publicar manifiesto firmado
+      - name: Publicar manifiesto
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add -- pack.json
+          git add -- pack-auto.json
           if git diff --cached --quiet; then
             echo 'El manifiesto ya esta actualizado.'
             exit 0
           fi
-          git commit -m 'Actualizar pack firmado de Kazino'
+          git commit -m 'Actualizar pack de Kazino'
           git push origin HEAD:main
