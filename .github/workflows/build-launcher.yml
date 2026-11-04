@@ -24,4 +24,4 @@ jobs:
           ELECTRON_SKIP_BINARY_DOWNLOAD: '1'
           CSC_IDENTITY_AUTO_DISCOVERY: 'false'
           ELECTRON_BUILDER_COMPRESSION_LEVEL: '1'
-# Release 0.4.14: acknowledged and Windows-tested updates.
+# Native updater diagnostics enabled.
