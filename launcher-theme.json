@@ -1,0 +1,19 @@
+{
+  "studio": "BLU STUDIO",
+  "pack": "KAZINO",
+  "tagline": "Tu próximo mundo empieza aquí.",
+  "announcement": "",
+  "playLabel": "JUGAR",
+  "server": "",
+  "accent": "#ffbb00",
+  "background": "#0c1011",
+  "panel": "#1a2123",
+  "font": "segoe",
+  "radius": 28,
+  "logoScale": 95,
+  "darkness": 20,
+  "compact": false,
+  "logo": null,
+  "banner": null,
+  "studioLogo": null
+}
