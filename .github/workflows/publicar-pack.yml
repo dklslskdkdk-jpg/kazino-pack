@@ -1,5 +1,4 @@
-name: Publicar pack de Kazino
-
+name: Publicar packs de Bluu Client
 on:
   push:
     branches: [main]
@@ -7,39 +6,35 @@ on:
       - 'mods/**'
       - 'resourcepacks/**'
       - 'shaderpacks/**'
+      - 'instances/**'
+      - 'launcher-instances.json'
       - '.github/scripts/publish-pack.cjs'
       - '.github/workflows/publicar-pack.yml'
   workflow_dispatch:
-
 permissions:
   contents: write
-
 concurrency:
   group: publicar-pack-kazino
   cancel-in-progress: false
-
 jobs:
   publicar:
     if: github.repository == 'dklslskdkdk-jpg/kazino-pack' && github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
-      - name: Descargar repositorio
-        uses: actions/checkout@v4
-      - name: Preparar Node
-        uses: actions/setup-node@v4
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - name: Verificar archivos autorizados
+      - name: Verificar y generar cada pack autorizado
         run: node .github/scripts/publish-pack.cjs
-      - name: Publicar manifiesto
+      - name: Publicar manifiestos independientes
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add -- pack-auto.json
-          if git diff --cached --quiet; then
-            echo 'El manifiesto ya esta actualizado.'
-            exit 0
-          fi
-          git commit -m 'Actualizar pack de Kazino'
+          if [ -d instances ]; then git add -- instances; fi
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m 'Actualizar packs de Bluu Client'
+          git pull --rebase origin main
           git push origin HEAD:main
