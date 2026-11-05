@@ -5,8 +5,13 @@
       "id": "kazino",
       "name": "KAZINO",
       "description": "La instancia original del estudio.",
-      "visibility": "owner",
-      "viewers": [],
+      "visibility": "selected",
+      "viewers": [
+        {
+          "uuid": "50f7d32e3d6a4f5c901aea9082c17240",
+          "name": "SluzzBeh"
+        }
+      ],
       "theme": {
         "studio": "BLU STUDIOS",
         "pack": "KAZINO",
