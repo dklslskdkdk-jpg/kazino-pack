@@ -1,0 +1,37 @@
+name: Añadir FichaKazino 1.0.0
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/ficha-100.yml']
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: publicar-pack-kazino
+  cancel-in-progress: false
+jobs:
+  publicar:
+    if: github.repository == 'dklslskdkdk-jpg/kazino-pack' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verificar y añadir FichaKazino
+        run: python3 .github/ficha-100/import.py
+      - name: Publicar mod y lista de descarga
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- mods/FichaKazino-Forge-1.20.1-1.0.0.jar
+          git commit -m 'Añadir FichaKazino 1.0.0 al pack de Kazino'
+          PACK_COMMIT=$(git rev-parse HEAD)
+          PACK_COMMIT="$PACK_COMMIT" node -e "const fs=require('fs'),p=require('./.github/scripts/publish-pack.cjs').build(process.cwd(),process.env.GITHUB_REPOSITORY,process.env.PACK_COMMIT);fs.writeFileSync('pack-auto.json',JSON.stringify(p,null,2)+'\n');"
+          git add -- pack-auto.json
+          git commit -m 'Publicar descarga verificada de FichaKazino'
+          git pull --rebase origin main
+          git push origin HEAD:main
