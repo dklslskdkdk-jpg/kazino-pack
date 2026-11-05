@@ -1,4 +1,4 @@
-name: Build Bluu Client 0.4.29
+name: Build Bluu Client 0.4.30
 on:
   workflow_dispatch:
   push:
