@@ -1,4 +1,4 @@
-name: Build Blu Studio launcher
+name: Build Bluu Client 0.4.27
 on:
   workflow_dispatch:
   push:
