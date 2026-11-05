@@ -1,41 +1,41 @@
 {
   "minecraft": "1.20.1",
   "forge": "47.4.0",
-  "version": "b5475fd4654431f95d207cb9c116f883a9942765",
+  "version": "6e2e279b27681dd1cc1a9ac4195472daa755bdb0",
   "mods": [
     {
       "file": "BLU-Creeper-Nuclear-Forge-1.20.1-Sin-Pehkui-1.0.3.jar",
-      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/b5475fd4654431f95d207cb9c116f883a9942765/instances/crewsafio/mods/BLU-Creeper-Nuclear-Forge-1.20.1-Sin-Pehkui-1.0.3.jar",
+      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/6e2e279b27681dd1cc1a9ac4195472daa755bdb0/instances/crewsafio/mods/BLU-Creeper-Nuclear-Forge-1.20.1-Sin-Pehkui-1.0.3.jar",
       "sha256": "3ac07c0acfbdc8194e329cea0be9ad4531a73ecff9cd75a53e560ba342a6e5ae"
     },
     {
       "file": "BloqueLetras-Forge-1.20.1-1.0.1.jar",
-      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/b5475fd4654431f95d207cb9c116f883a9942765/instances/crewsafio/mods/BloqueLetras-Forge-1.20.1-1.0.1.jar",
+      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/6e2e279b27681dd1cc1a9ac4195472daa755bdb0/instances/crewsafio/mods/BloqueLetras-Forge-1.20.1-1.0.1.jar",
       "sha256": "b1f2009ad9ab9f347af03b509f74991c45360852b2a9e4965e23a6854411c0a3"
     },
     {
       "file": "Blu-MobSpawn-Control-Forge-1.20.1-1.0.2.jar",
-      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/b5475fd4654431f95d207cb9c116f883a9942765/instances/crewsafio/mods/Blu-MobSpawn-Control-Forge-1.20.1-1.0.2.jar",
+      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/6e2e279b27681dd1cc1a9ac4195472daa755bdb0/instances/crewsafio/mods/Blu-MobSpawn-Control-Forge-1.20.1-1.0.2.jar",
       "sha256": "f540d118605181a7a826546825369e8b1d7d1758342c2ad598f965d9b8b933b3"
     },
     {
       "file": "Blu-Waystones-Control-Forge-1.20.1-1.1.0.jar",
-      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/b5475fd4654431f95d207cb9c116f883a9942765/instances/crewsafio/mods/Blu-Waystones-Control-Forge-1.20.1-1.1.0.jar",
+      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/6e2e279b27681dd1cc1a9ac4195472daa755bdb0/instances/crewsafio/mods/Blu-Waystones-Control-Forge-1.20.1-1.1.0.jar",
       "sha256": "e1746b8469908231a058568bbd1058114553c9dfc64e0d03bdeb8e52cbe2dadf"
     },
     {
       "file": "BluAltura-1.1.0-MAGMA-SIN-MENSAJES.jar",
-      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/b5475fd4654431f95d207cb9c116f883a9942765/instances/crewsafio/mods/BluAltura-1.1.0-MAGMA-SIN-MENSAJES.jar",
+      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/6e2e279b27681dd1cc1a9ac4195472daa755bdb0/instances/crewsafio/mods/BluAltura-1.1.0-MAGMA-SIN-MENSAJES.jar",
       "sha256": "7080d44c4e7155759642d2ec6fe8f8eb57d7e0260fe689cd94e335fbf9f2ac0b"
     },
     {
       "file": "CreativeCore_FORGE_v2.12.40_mc1.20.1.jar",
-      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/b5475fd4654431f95d207cb9c116f883a9942765/instances/crewsafio/mods/CreativeCore_FORGE_v2.12.40_mc1.20.1.jar",
+      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/6e2e279b27681dd1cc1a9ac4195472daa755bdb0/instances/crewsafio/mods/CreativeCore_FORGE_v2.12.40_mc1.20.1.jar",
       "sha256": "936de62489c0d6fbe74202486cbe2b191b8629b02bab1d480acfdb03690f33f4"
     },
     {
       "file": "CrewSafio67.jar",
-      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/b5475fd4654431f95d207cb9c116f883a9942765/instances/crewsafio/mods/CrewSafio67.jar",
+      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/6e2e279b27681dd1cc1a9ac4195472daa755bdb0/instances/crewsafio/mods/CrewSafio67.jar",
       "sha256": "b9f0d5a0a496e5cacbe2ee7d3c4811f7527469a004f38195e2c32165b697f052"
     },
     {
@@ -45,332 +45,332 @@
     },
     {
       "file": "Dedsafio4-Deny-Forge-1.20.1-1.0.3-Proteccion-Admins.jar",
-      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/b5475fd4654431f95d207cb9c116f883a9942765/instances/crewsafio/mods/Dedsafio4-Deny-Forge-1.20.1-1.0.3-Proteccion-Admins.jar",
+      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/6e2e279b27681dd1cc1a9ac4195472daa755bdb0/instances/crewsafio/mods/Dedsafio4-Deny-Forge-1.20.1-1.0.3-Proteccion-Admins.jar",
       "sha256": "103466abf2dc09f68b388cbdac0da5453f27bf2c151483557d4356097e34da1d"
     },
     {
       "file": "DimensionesPersonalizadas-Forge-1.20.1-1.4.0-protect.jar",
-      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/b5475fd4654431f95d207cb9c116f883a9942765/instances/crewsafio/mods/DimensionesPersonalizadas-Forge-1.20.1-1.4.0-protect.jar",
+      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/6e2e279b27681dd1cc1a9ac4195472daa755bdb0/instances/crewsafio/mods/DimensionesPersonalizadas-Forge-1.20.1-1.4.0-protect.jar",
       "sha256": "c689e6a5aafa5d1c9a65d43573c2d206367ce8eff5f9dadd4df5c78ff402ebc3"
     },
     {
       "file": "Emotecraft-CrewSafio-Rueda-Dorada-FIX1-SinCrash-Forge-1.20.1.jar",
-      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/b5475fd4654431f95d207cb9c116f883a9942765/instances/crewsafio/mods/Emotecraft-CrewSafio-Rueda-Dorada-FIX1-SinCrash-Forge-1.20.1.jar",
+      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/6e2e279b27681dd1cc1a9ac4195472daa755bdb0/instances/crewsafio/mods/Emotecraft-CrewSafio-Rueda-Dorada-FIX1-SinCrash-Forge-1.20.1.jar",
       "sha256": "fb299f5bdb3f0894cc8c57f1de97d7933ee9cfcf6ff693cfd217f61c8820080c"
     },
     {
       "file": "ImmersiveUI-FORGE-0.3.0.jar",
-      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/b5475fd4654431f95d207cb9c116f883a9942765/instances/crewsafio/mods/ImmersiveUI-FORGE-0.3.0.jar",
+      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/6e2e279b27681dd1cc1a9ac4195472daa755bdb0/instances/crewsafio/mods/ImmersiveUI-FORGE-0.3.0.jar",
       "sha256": "7295ae6681b178ed633e951b1f4478d15b2ed7b13836038caf7d3c9427fff1ff"
     },
     {
       "file": "ManyIdeasCore-1.20.1-1.6.1.jar",
-      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/b5475fd4654431f95d207cb9c116f883a9942765/instances/crewsafio/mods/ManyIdeasCore-1.20.1-1.6.1.jar",
+      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/6e2e279b27681dd1cc1a9ac4195472daa755bdb0/instances/crewsafio/mods/ManyIdeasCore-1.20.1-1.6.1.jar",
       "sha256": "153b8497afa1df3ff643224078b0bca5cce7cd1ac9668df7fa068a22a2248849"
     },
     {
       "file": "ManyIdeasHalloween-1.20.1-1.0.1.jar",
-      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/b5475fd4654431f95d207cb9c116f883a9942765/instances/crewsafio/mods/ManyIdeasHalloween-1.20.1-1.0.1.jar",
+      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/6e2e279b27681dd1cc1a9ac4195472daa755bdb0/instances/crewsafio/mods/ManyIdeasHalloween-1.20.1-1.0.1.jar",
       "sha256": "af1a99f4637e55536ea13b0760e5dca2abab5624a2fedafe792176aa74ae7f22"
     },
     {
       "file": "OctoLib-FORGE-0.5.0.1+1.20.1.jar",
-      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/b5475fd4654431f95d207cb9c116f883a9942765/instances/crewsafio/mods/OctoLib-FORGE-0.5.0.1%2B1.20.1.jar",
+      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/6e2e279b27681dd1cc1a9ac4195472daa755bdb0/instances/crewsafio/mods/OctoLib-FORGE-0.5.0.1%2B1.20.1.jar",
       "sha256": "5bb146c691f2c5054752f006a61aab6335ecb1cd9718a9643733de5367971047"
     },
     {
       "file": "Paxi-1.20-Forge-4.0.jar",
-      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/b5475fd4654431f95d207cb9c116f883a9942765/instances/crewsafio/mods/Paxi-1.20-Forge-4.0.jar",
+      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/6e2e279b27681dd1cc1a9ac4195472daa755bdb0/instances/crewsafio/mods/Paxi-1.20-Forge-4.0.jar",
       "sha256": "dd18dd9696d099137b170076676e8411e3d8385af15941f68472f21167266f1a"
     },
     {
       "file": "Pehkui-3.8.2+1.20.1-forge.jar",
-      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/b5475fd4654431f95d207cb9c116f883a9942765/instances/crewsafio/mods/Pehkui-3.8.2%2B1.20.1-forge.jar",
+      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/6e2e279b27681dd1cc1a9ac4195472daa755bdb0/instances/crewsafio/mods/Pehkui-3.8.2%2B1.20.1-forge.jar",
       "sha256": "54210f454c166f65a1bcbbfe4ea52e6f73e07844a793c7132f1af4076a0f42fc"
     },
     {
       "file": "SpectadorBlu-Forge-1.20.1-1.0.0.jar",
-      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/b5475fd4654431f95d207cb9c116f883a9942765/instances/crewsafio/mods/SpectadorBlu-Forge-1.20.1-1.0.0.jar",
+      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/6e2e279b27681dd1cc1a9ac4195472daa755bdb0/instances/crewsafio/mods/SpectadorBlu-Forge-1.20.1-1.0.0.jar",
       "sha256": "ffe96df81879ceff3bfa045d41f7d0be45f60fc7cde5c655d9bb1ce655c07d06"
     },
     {
       "file": "TreeChop-1.20.1-forge-0.19.0-fixed.jar",
-      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/b5475fd4654431f95d207cb9c116f883a9942765/instances/crewsafio/mods/TreeChop-1.20.1-forge-0.19.0-fixed.jar",
+      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/6e2e279b27681dd1cc1a9ac4195472daa755bdb0/instances/crewsafio/mods/TreeChop-1.20.1-forge-0.19.0-fixed.jar",
       "sha256": "219fbe5bf8d862dc7b524ca5a0151f66bba4d53a01010858e136a9e8c4d55d4f"
     },
     {
       "file": "YungsApi-1.20-Forge-4.0.6.jar",
-      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/b5475fd4654431f95d207cb9c116f883a9942765/instances/crewsafio/mods/YungsApi-1.20-Forge-4.0.6.jar",
+      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/6e2e279b27681dd1cc1a9ac4195472daa755bdb0/instances/crewsafio/mods/YungsApi-1.20-Forge-4.0.6.jar",
       "sha256": "101c30d01d0cf9d86190f578eb1e43bd06b64092e95662a00ef52946f472c7b1"
     },
     {
       "file": "amendments-1.20-2.2.6.jar",
-      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/b5475fd4654431f95d207cb9c116f883a9942765/instances/crewsafio/mods/amendments-1.20-2.2.6.jar",
+      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/6e2e279b27681dd1cc1a9ac4195472daa755bdb0/instances/crewsafio/mods/amendments-1.20-2.2.6.jar",
       "sha256": "46c7e1276bc77a0843267a6aeee381af61f16bedc7949447fff49eeb7aeb7917"
     },
     {
       "file": "architectury-9.2.14-forge.jar",
-      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/b5475fd4654431f95d207cb9c116f883a9942765/instances/crewsafio/mods/architectury-9.2.14-forge.jar",
+      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/6e2e279b27681dd1cc1a9ac4195472daa755bdb0/instances/crewsafio/mods/architectury-9.2.14-forge.jar",
       "sha256": "218b471d0b8a1f6cda14cfc1beb9eeb0df54304500acc6c5613d9b88ec65d9af"
     },
     {
       "file": "armadura-blu-3d-forge-1.20.1-1.1.5.jar",
-      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/b5475fd4654431f95d207cb9c116f883a9942765/instances/crewsafio/mods/armadura-blu-3d-forge-1.20.1-1.1.5.jar",
+      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/6e2e279b27681dd1cc1a9ac4195472daa755bdb0/instances/crewsafio/mods/armadura-blu-3d-forge-1.20.1-1.1.5.jar",
       "sha256": "54b54421ddb44984dd97b58a9a63ba4002ec00dbc252e860288ffda3d9b8a5af"
     },
     {
       "file": "athena-forge-1.20.1-3.1.2.jar",
-      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/b5475fd4654431f95d207cb9c116f883a9942765/instances/crewsafio/mods/athena-forge-1.20.1-3.1.2.jar",
+      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/6e2e279b27681dd1cc1a9ac4195472daa755bdb0/instances/crewsafio/mods/athena-forge-1.20.1-3.1.2.jar",
       "sha256": "64eec9cffb8847a459536096ac396b135ffb07c7d9d13c6a47d9cd7b251276ab"
     },
     {
       "file": "balm-forge-1.20.1-7.3.44.jar",
-      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/b5475fd4654431f95d207cb9c116f883a9942765/instances/crewsafio/mods/balm-forge-1.20.1-7.3.44.jar",
+      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/6e2e279b27681dd1cc1a9ac4195472daa755bdb0/instances/crewsafio/mods/balm-forge-1.20.1-7.3.44.jar",
       "sha256": "ad11d968770bb1ce73377626b6f1dcd4ae6f8be1ef6f37cee9b872b8176aebd3"
     },
     {
       "file": "bosque-hueco-forge-1.20.1-1.2.8.jar",
-      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/b5475fd4654431f95d207cb9c116f883a9942765/instances/crewsafio/mods/bosque-hueco-forge-1.20.1-1.2.8.jar",
+      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/6e2e279b27681dd1cc1a9ac4195472daa755bdb0/instances/crewsafio/mods/bosque-hueco-forge-1.20.1-1.2.8.jar",
       "sha256": "97183dd499f008b0149de1434696a7f2b9fc10d954bf6aa1ba8da46081d0c518"
     },
     {
       "file": "chipped-forge-1.20.1-3.0.7.jar",
-      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/b5475fd4654431f95d207cb9c116f883a9942765/instances/crewsafio/mods/chipped-forge-1.20.1-3.0.7.jar",
+      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/6e2e279b27681dd1cc1a9ac4195472daa755bdb0/instances/crewsafio/mods/chipped-forge-1.20.1-3.0.7.jar",
       "sha256": "300e02535342b710fb34409821de9d097b0d8b17f56a57a17d75d05c4c1c5b63"
     },
     {
       "file": "creeperoverhaul-3.0.2-forge.jar",
-      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/b5475fd4654431f95d207cb9c116f883a9942765/instances/crewsafio/mods/creeperoverhaul-3.0.2-forge.jar",
+      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/6e2e279b27681dd1cc1a9ac4195472daa755bdb0/instances/crewsafio/mods/creeperoverhaul-3.0.2-forge.jar",
       "sha256": "212eb2a2d767f54fbfbac2336c63fe2bd1aae4d827ab358da329a746358b6dd9"
     },
     {
       "file": "custom-glow-enchantment-outline-forge-1.20.1-1.2.3.jar",
-      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/b5475fd4654431f95d207cb9c116f883a9942765/instances/crewsafio/mods/custom-glow-enchantment-outline-forge-1.20.1-1.2.3.jar",
+      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/6e2e279b27681dd1cc1a9ac4195472daa755bdb0/instances/crewsafio/mods/custom-glow-enchantment-outline-forge-1.20.1-1.2.3.jar",
       "sha256": "96f4e3ed95720ddb9c3193f7948d5331aa7343f03b264f43a2e90b85572c1c2e"
     },
     {
       "file": "cwb-forge-3.0.0+mc1.20.jar",
-      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/b5475fd4654431f95d207cb9c116f883a9942765/instances/crewsafio/mods/cwb-forge-3.0.0%2Bmc1.20.jar",
+      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/6e2e279b27681dd1cc1a9ac4195472daa755bdb0/instances/crewsafio/mods/cwb-forge-3.0.0%2Bmc1.20.jar",
       "sha256": "97b0827f20b6213c97d2244f7da205d85ffa72e51fa167d69466b49018532478"
     },
     {
       "file": "dedsafio3-0.0.9-forge-1.20.1-vuelo-suelo-fix.jar",
-      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/b5475fd4654431f95d207cb9c116f883a9942765/instances/crewsafio/mods/dedsafio3-0.0.9-forge-1.20.1-vuelo-suelo-fix.jar",
+      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/6e2e279b27681dd1cc1a9ac4195472daa755bdb0/instances/crewsafio/mods/dedsafio3-0.0.9-forge-1.20.1-vuelo-suelo-fix.jar",
       "sha256": "7a9ba03d7463fd36eee50a3d1782c373f06ab4983dacc6ffdebb746510206544"
     },
     {
       "file": "dedsafio3-tienda-1.0.4.jar",
-      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/b5475fd4654431f95d207cb9c116f883a9942765/instances/crewsafio/mods/dedsafio3-tienda-1.0.4.jar",
+      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/6e2e279b27681dd1cc1a9ac4195472daa755bdb0/instances/crewsafio/mods/dedsafio3-tienda-1.0.4.jar",
       "sha256": "ff718766d2c331dd588eb4a680409feece96e93fc7d3a28525a1695fc9c2c7f6"
     },
     {
       "file": "embeddium-0.3.31+mc1.20.1.jar",
-      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/b5475fd4654431f95d207cb9c116f883a9942765/instances/crewsafio/mods/embeddium-0.3.31%2Bmc1.20.1.jar",
+      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/6e2e279b27681dd1cc1a9ac4195472daa755bdb0/instances/crewsafio/mods/embeddium-0.3.31%2Bmc1.20.1.jar",
       "sha256": "eed3d1325f2acc2fd4e69bb495e5ccb91d962126ac5330f0582ebc2a3daf47fb"
     },
     {
       "file": "emf_compat_core_forge_1.20.1_2.3.2.jar",
-      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/b5475fd4654431f95d207cb9c116f883a9942765/instances/crewsafio/mods/emf_compat_core_forge_1.20.1_2.3.2.jar",
+      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/6e2e279b27681dd1cc1a9ac4195472daa755bdb0/instances/crewsafio/mods/emf_compat_core_forge_1.20.1_2.3.2.jar",
       "sha256": "e77128f69644be3c137e8c9c78b4ec0db274fb2e5e395a49c80463cfeac8222a"
     },
     {
       "file": "entity_model_features-3.3.12-1.20.1-forge.jar",
-      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/b5475fd4654431f95d207cb9c116f883a9942765/instances/crewsafio/mods/entity_model_features-3.3.12-1.20.1-forge.jar",
+      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/6e2e279b27681dd1cc1a9ac4195472daa755bdb0/instances/crewsafio/mods/entity_model_features-3.3.12-1.20.1-forge.jar",
       "sha256": "d7caedcb7c848d605a9f075c71e0d13ad5194326e55a6f45a50a97a3d8d87920"
     },
     {
       "file": "entity_texture_features-7.2.6-1.20.1-forge.jar",
-      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/b5475fd4654431f95d207cb9c116f883a9942765/instances/crewsafio/mods/entity_texture_features-7.2.6-1.20.1-forge.jar",
+      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/6e2e279b27681dd1cc1a9ac4195472daa755bdb0/instances/crewsafio/mods/entity_texture_features-7.2.6-1.20.1-forge.jar",
       "sha256": "8ac703b90ec6709e702beb27948ba4064f14fe1e322f13947399eff7486263e3"
     },
     {
       "file": "evercrops-1.20.1-4.4.0.jar",
-      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/b5475fd4654431f95d207cb9c116f883a9942765/instances/crewsafio/mods/evercrops-1.20.1-4.4.0.jar",
+      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/6e2e279b27681dd1cc1a9ac4195472daa755bdb0/instances/crewsafio/mods/evercrops-1.20.1-4.4.0.jar",
       "sha256": "c27a047f766736a6db1b76554cb47aa7decf5c6238c298d7d3f030e326cb75ea"
     },
     {
       "file": "explosiveenhancement-1.2.0.jar",
-      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/b5475fd4654431f95d207cb9c116f883a9942765/instances/crewsafio/mods/explosiveenhancement-1.2.0.jar",
+      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/6e2e279b27681dd1cc1a9ac4195472daa755bdb0/instances/crewsafio/mods/explosiveenhancement-1.2.0.jar",
       "sha256": "aea3fd8c2b2b8cbcf522ae47d392af67d3f60ded48d4ebf0270e2a99f85b431a"
     },
     {
       "file": "faplayer-forge-1.20.1-1.1.jar",
-      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/b5475fd4654431f95d207cb9c116f883a9942765/instances/crewsafio/mods/faplayer-forge-1.20.1-1.1.jar",
+      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/6e2e279b27681dd1cc1a9ac4195472daa755bdb0/instances/crewsafio/mods/faplayer-forge-1.20.1-1.1.jar",
       "sha256": "bf5bcfe6c8db7b861069b9b6f0932dd099459b84198f5f8e324462ecc00c73bd"
     },
     {
       "file": "ferritecore-6.0.1-forge.jar",
-      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/b5475fd4654431f95d207cb9c116f883a9942765/instances/crewsafio/mods/ferritecore-6.0.1-forge.jar",
+      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/6e2e279b27681dd1cc1a9ac4195472daa755bdb0/instances/crewsafio/mods/ferritecore-6.0.1-forge.jar",
       "sha256": "9c2c9396a49e796d88497758caa4637d2bcbb433c318e2dd9cebcffbaf0f6c54"
     },
     {
       "file": "geckolib-forge-1.20.1-4.8.4.jar",
-      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/b5475fd4654431f95d207cb9c116f883a9942765/instances/crewsafio/mods/geckolib-forge-1.20.1-4.8.4.jar",
+      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/6e2e279b27681dd1cc1a9ac4195472daa755bdb0/instances/crewsafio/mods/geckolib-forge-1.20.1-4.8.4.jar",
       "sha256": "c04abba4fd354dd8c0e8a732f1f05f4dca893d2e1d962b2ab128bbd411478747"
     },
     {
       "file": "immersivedamageindicators-forge-1.0.0-1.20.1.jar",
-      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/b5475fd4654431f95d207cb9c116f883a9942765/instances/crewsafio/mods/immersivedamageindicators-forge-1.0.0-1.20.1.jar",
+      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/6e2e279b27681dd1cc1a9ac4195472daa755bdb0/instances/crewsafio/mods/immersivedamageindicators-forge-1.0.0-1.20.1.jar",
       "sha256": "767a7e5b4794d0fbc877e9226c9a7f90eb080319b3dd37ad5328e18541a78b45"
     },
     {
       "file": "immersivehotbar-1.2.2-forge-1.20.1-all.jar",
-      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/b5475fd4654431f95d207cb9c116f883a9942765/instances/crewsafio/mods/immersivehotbar-1.2.2-forge-1.20.1-all.jar",
+      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/6e2e279b27681dd1cc1a9ac4195472daa755bdb0/instances/crewsafio/mods/immersivehotbar-1.2.2-forge-1.20.1-all.jar",
       "sha256": "6a914777f33af72ff29a15fb717a5affd8edb1ba08078f6bc6fe79b7bffa0b40"
     },
     {
       "file": "immersivemessages-forge-1.0.18-1.20.1.jar",
-      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/b5475fd4654431f95d207cb9c116f883a9942765/instances/crewsafio/mods/immersivemessages-forge-1.0.18-1.20.1.jar",
+      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/6e2e279b27681dd1cc1a9ac4195472daa755bdb0/instances/crewsafio/mods/immersivemessages-forge-1.0.18-1.20.1.jar",
       "sha256": "ae135add526bfa94a92f05be11df045d1d808a84014262cd6d771bf92ff63643"
     },
     {
       "file": "jei-1.20.1-forge-15.56.0.205.jar",
-      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/b5475fd4654431f95d207cb9c116f883a9942765/instances/crewsafio/mods/jei-1.20.1-forge-15.56.0.205.jar",
+      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/6e2e279b27681dd1cc1a9ac4195472daa755bdb0/instances/crewsafio/mods/jei-1.20.1-forge-15.56.0.205.jar",
       "sha256": "6b251e60a4719c874da89d750af97aa6498f6f4475e3ae79cb1288c7bf0cb65c"
     },
     {
       "file": "konkrete_forge_1.8.0_MC_1.20-1.20.1.jar",
-      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/b5475fd4654431f95d207cb9c116f883a9942765/instances/crewsafio/mods/konkrete_forge_1.8.0_MC_1.20-1.20.1.jar",
+      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/6e2e279b27681dd1cc1a9ac4195472daa755bdb0/instances/crewsafio/mods/konkrete_forge_1.8.0_MC_1.20-1.20.1.jar",
       "sha256": "e78686b92c3761ec26eb9d3c53efdd3d6ca77981cbd3723995e1163b7103ae0b"
     },
     {
       "file": "luminous_halloween-1.2.jar",
-      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/b5475fd4654431f95d207cb9c116f883a9942765/instances/crewsafio/mods/luminous_halloween-1.2.jar",
+      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/6e2e279b27681dd1cc1a9ac4195472daa755bdb0/instances/crewsafio/mods/luminous_halloween-1.2.jar",
       "sha256": "72f677c65456b65eae6eb84a59625d53af27abbcf19b2c5d7e086d0a869d9c53"
     },
     {
       "file": "manzanas-vacio-forge-1.20.1-1.0.9.jar",
-      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/b5475fd4654431f95d207cb9c116f883a9942765/instances/crewsafio/mods/manzanas-vacio-forge-1.20.1-1.0.9.jar",
+      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/6e2e279b27681dd1cc1a9ac4195472daa755bdb0/instances/crewsafio/mods/manzanas-vacio-forge-1.20.1-1.0.9.jar",
       "sha256": "d7ed6dd1457b98d93331dc87af6898d423a5e03cdefba7d7944724d0b7a4e4eb"
     },
     {
       "file": "mcw-doors-1.1.5-mc1.20.1forge.jar",
-      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/b5475fd4654431f95d207cb9c116f883a9942765/instances/crewsafio/mods/mcw-doors-1.1.5-mc1.20.1forge.jar",
+      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/6e2e279b27681dd1cc1a9ac4195472daa755bdb0/instances/crewsafio/mods/mcw-doors-1.1.5-mc1.20.1forge.jar",
       "sha256": "e975bdd5ed1d680e37fb2a6cda4f4eb5c42a837fa24b0cddabe7688df42c10af"
     },
     {
       "file": "mcw-furniture-3.4.1-mc1.20.1forge.jar",
-      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/b5475fd4654431f95d207cb9c116f883a9942765/instances/crewsafio/mods/mcw-furniture-3.4.1-mc1.20.1forge.jar",
+      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/6e2e279b27681dd1cc1a9ac4195472daa755bdb0/instances/crewsafio/mods/mcw-furniture-3.4.1-mc1.20.1forge.jar",
       "sha256": "9f068315ac5ae7c4b76a6ac0679cde9be59d5cbf37488a477f13b95fe1cbc37d"
     },
     {
       "file": "mcw-trapdoors-1.1.5-mc1.20.1forge.jar",
-      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/b5475fd4654431f95d207cb9c116f883a9942765/instances/crewsafio/mods/mcw-trapdoors-1.1.5-mc1.20.1forge.jar",
+      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/6e2e279b27681dd1cc1a9ac4195472daa755bdb0/instances/crewsafio/mods/mcw-trapdoors-1.1.5-mc1.20.1forge.jar",
       "sha256": "c2abff58334d79ea61278c6dffd941a4f4ceb5cffadf889359fd45a003738217"
     },
     {
       "file": "melody_forge_1.0.3_MC_1.20.1-1.20.4.jar",
-      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/b5475fd4654431f95d207cb9c116f883a9942765/instances/crewsafio/mods/melody_forge_1.0.3_MC_1.20.1-1.20.4.jar",
+      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/6e2e279b27681dd1cc1a9ac4195472daa755bdb0/instances/crewsafio/mods/melody_forge_1.0.3_MC_1.20.1-1.20.4.jar",
       "sha256": "933e2a7e79c4594f965f7f7d00b1f28a98ec2a180ad8f9f90310a266fe5cf5d8"
     },
     {
       "file": "modernfix-forge-5.27.89+mc1.20.1.jar",
-      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/b5475fd4654431f95d207cb9c116f883a9942765/instances/crewsafio/mods/modernfix-forge-5.27.89%2Bmc1.20.1.jar",
+      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/6e2e279b27681dd1cc1a9ac4195472daa755bdb0/instances/crewsafio/mods/modernfix-forge-5.27.89%2Bmc1.20.1.jar",
       "sha256": "96750ec3e12b581ee7a936ce2b7c2b35251e97b6f729b2db8bc0d5c9a2dc12fa"
     },
     {
       "file": "moonlight-1.20-2.16.37-forge.jar",
-      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/b5475fd4654431f95d207cb9c116f883a9942765/instances/crewsafio/mods/moonlight-1.20-2.16.37-forge.jar",
+      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/6e2e279b27681dd1cc1a9ac4195472daa755bdb0/instances/crewsafio/mods/moonlight-1.20-2.16.37-forge.jar",
       "sha256": "0cf5a628fd2dcde4a87b9e596657684c409836414fc86cbe110f3858824dc971"
     },
     {
       "file": "morpher.jar",
-      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/b5475fd4654431f95d207cb9c116f883a9942765/instances/crewsafio/mods/morpher.jar",
+      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/6e2e279b27681dd1cc1a9ac4195472daa755bdb0/instances/crewsafio/mods/morpher.jar",
       "sha256": "7a22b31a6a8d1faab91d0dbd5c2e19b05f79359a1ff6f4cd3de1417be95b3274"
     },
     {
       "file": "objeto-dimension-forge-1.20.1-1.0.0.jar",
-      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/b5475fd4654431f95d207cb9c116f883a9942765/instances/crewsafio/mods/objeto-dimension-forge-1.20.1-1.0.0.jar",
+      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/6e2e279b27681dd1cc1a9ac4195472daa755bdb0/instances/crewsafio/mods/objeto-dimension-forge-1.20.1-1.0.0.jar",
       "sha256": "818323dedac5f2e602cb716fb9ae14fee9aebd72a599295612f4fd5ed389628c"
     },
     {
       "file": "plasmovoice-forge-1.20.1-2.1.17.jar",
-      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/b5475fd4654431f95d207cb9c116f883a9942765/instances/crewsafio/mods/plasmovoice-forge-1.20.1-2.1.17.jar",
+      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/6e2e279b27681dd1cc1a9ac4195472daa755bdb0/instances/crewsafio/mods/plasmovoice-forge-1.20.1-2.1.17.jar",
       "sha256": "2f2ae3a5856b44b460e72030a95318fc3657ae4c24ee3f3e16bcb5cbaa42e20d"
     },
     {
       "file": "player-animation-lib-forge-1.0.2-rc1+1.20.jar",
-      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/b5475fd4654431f95d207cb9c116f883a9942765/instances/crewsafio/mods/player-animation-lib-forge-1.0.2-rc1%2B1.20.jar",
+      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/6e2e279b27681dd1cc1a9ac4195472daa755bdb0/instances/crewsafio/mods/player-animation-lib-forge-1.0.2-rc1%2B1.20.jar",
       "sha256": "90d9965cb9efdbda29fdc5610be3914cf7008bf5c392ff34f7ab25f96a852691"
     },
     {
       "file": "portal-verde-forge-1.20.1-1.0.3.jar",
-      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/b5475fd4654431f95d207cb9c116f883a9942765/instances/crewsafio/mods/portal-verde-forge-1.20.1-1.0.3.jar",
+      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/6e2e279b27681dd1cc1a9ac4195472daa755bdb0/instances/crewsafio/mods/portal-verde-forge-1.20.1-1.0.3.jar",
       "sha256": "4aa13dad64916902f0451b8a460516ef204706d5759623a29bb4e3737d9e3268"
     },
     {
       "file": "resourcefulconfig-forge-1.20.1-2.1.3.jar",
-      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/b5475fd4654431f95d207cb9c116f883a9942765/instances/crewsafio/mods/resourcefulconfig-forge-1.20.1-2.1.3.jar",
+      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/6e2e279b27681dd1cc1a9ac4195472daa755bdb0/instances/crewsafio/mods/resourcefulconfig-forge-1.20.1-2.1.3.jar",
       "sha256": "c404b9e5cf8595427a72d4ca6ee5730289168762b463f169be3ae5dfe3727ded"
     },
     {
       "file": "resourcefullib-forge-1.20.1-2.1.29.jar",
-      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/b5475fd4654431f95d207cb9c116f883a9942765/instances/crewsafio/mods/resourcefullib-forge-1.20.1-2.1.29.jar",
+      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/6e2e279b27681dd1cc1a9ac4195472daa755bdb0/instances/crewsafio/mods/resourcefullib-forge-1.20.1-2.1.29.jar",
       "sha256": "b13afb95231d88e1caea5a045967e0fc291b29020b0d26ad39e6f9e9a551fee8"
     },
     {
       "file": "slopstrocity-forge-1.20.1-1.1.2.jar",
-      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/b5475fd4654431f95d207cb9c116f883a9942765/instances/crewsafio/mods/slopstrocity-forge-1.20.1-1.1.2.jar",
+      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/6e2e279b27681dd1cc1a9ac4195472daa755bdb0/instances/crewsafio/mods/slopstrocity-forge-1.20.1-1.1.2.jar",
       "sha256": "e700fdb7307f5bb496be1fd1e80debc75a3414d4e2fcf4dc4257328509a4eb1f"
     },
     {
       "file": "supplementaries-1.20-3.1.44-forge.jar",
-      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/b5475fd4654431f95d207cb9c116f883a9942765/instances/crewsafio/mods/supplementaries-1.20-3.1.44-forge.jar",
+      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/6e2e279b27681dd1cc1a9ac4195472daa755bdb0/instances/crewsafio/mods/supplementaries-1.20-3.1.44-forge.jar",
       "sha256": "13c07f2b290f9f3dc8fcab8287ad699b0af16974291ad43c7cc95f8cf235a90b"
     },
     {
       "file": "touch_n_motion_forge_1.20.1_1.0.4.jar",
-      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/b5475fd4654431f95d207cb9c116f883a9942765/instances/crewsafio/mods/touch_n_motion_forge_1.20.1_1.0.4.jar",
+      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/6e2e279b27681dd1cc1a9ac4195472daa755bdb0/instances/crewsafio/mods/touch_n_motion_forge_1.20.1_1.0.4.jar",
       "sha256": "2efdf890123e4924427d17f5f2541817b0f09d574d0f86a3988755979dd79165"
     },
     {
       "file": "trashslot-forge-1.20.1-15.1.5.jar",
-      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/b5475fd4654431f95d207cb9c116f883a9942765/instances/crewsafio/mods/trashslot-forge-1.20.1-15.1.5.jar",
+      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/6e2e279b27681dd1cc1a9ac4195472daa755bdb0/instances/crewsafio/mods/trashslot-forge-1.20.1-15.1.5.jar",
       "sha256": "7f038937dffeebc3885d347c47622d504a562da0bcce7873c50f2753db0a3746"
     },
     {
       "file": "txnilib-forge-1.0.24-1.20.1.jar",
-      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/b5475fd4654431f95d207cb9c116f883a9942765/instances/crewsafio/mods/txnilib-forge-1.0.24-1.20.1.jar",
+      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/6e2e279b27681dd1cc1a9ac4195472daa755bdb0/instances/crewsafio/mods/txnilib-forge-1.0.24-1.20.1.jar",
       "sha256": "71ca69345ef763903213e0b0db3c9c07d2a090ad311d1de66c31798a813a9d0e"
     },
     {
       "file": "waterframes-FORGE-mc1.20.1-v2.1.22.jar",
-      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/b5475fd4654431f95d207cb9c116f883a9942765/instances/crewsafio/mods/waterframes-FORGE-mc1.20.1-v2.1.22.jar",
+      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/6e2e279b27681dd1cc1a9ac4195472daa755bdb0/instances/crewsafio/mods/waterframes-FORGE-mc1.20.1-v2.1.22.jar",
       "sha256": "e7727c11b4d32aa25a7f1176cddef5f230f6f6b6dda3e37bf418b7f025b39ed8"
     },
     {
       "file": "watermedia-2.1.37.jar",
-      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/b5475fd4654431f95d207cb9c116f883a9942765/instances/crewsafio/mods/watermedia-2.1.37.jar",
+      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/6e2e279b27681dd1cc1a9ac4195472daa755bdb0/instances/crewsafio/mods/watermedia-2.1.37.jar",
       "sha256": "cdd8e1b50e4dee0892c5ed02724cea6b1a74d2b718c7e974c9cfc0efa8c10389"
     },
     {
       "file": "watermedia_youtube_plugin-2.1.2.jar",
-      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/b5475fd4654431f95d207cb9c116f883a9942765/instances/crewsafio/mods/watermedia_youtube_plugin-2.1.2.jar",
+      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/6e2e279b27681dd1cc1a9ac4195472daa755bdb0/instances/crewsafio/mods/watermedia_youtube_plugin-2.1.2.jar",
       "sha256": "95c2841103b4d1e0c222f29b49d9500c0d5306772aa18c6eb11925be6ff7507e"
     },
     {
       "file": "watervision-FG-mc1.20.1-v0.1.0-alpha.jar",
-      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/b5475fd4654431f95d207cb9c116f883a9942765/instances/crewsafio/mods/watervision-FG-mc1.20.1-v0.1.0-alpha.jar",
+      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/6e2e279b27681dd1cc1a9ac4195472daa755bdb0/instances/crewsafio/mods/watervision-FG-mc1.20.1-v0.1.0-alpha.jar",
       "sha256": "c04fb6d0996061c2e9d03efd2dd8eea6434355dfcb9618670bd52d632e00b90b"
     },
     {
       "file": "waystones-forge-1.20.1-14.1.21.jar",
-      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/b5475fd4654431f95d207cb9c116f883a9942765/instances/crewsafio/mods/waystones-forge-1.20.1-14.1.21.jar",
+      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/6e2e279b27681dd1cc1a9ac4195472daa755bdb0/instances/crewsafio/mods/waystones-forge-1.20.1-14.1.21.jar",
       "sha256": "fd6fe3c645328ea7be5bc6723d02c881e34650e0cbd4527ba59e42fa4cbe3c80"
     },
     {
       "file": "worldedit-mod-7.2.15.jar",
-      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/b5475fd4654431f95d207cb9c116f883a9942765/instances/crewsafio/mods/worldedit-mod-7.2.15.jar",
+      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/6e2e279b27681dd1cc1a9ac4195472daa755bdb0/instances/crewsafio/mods/worldedit-mod-7.2.15.jar",
       "sha256": "17db6b3e94f52d25426684663e1e1846823cbb7907f1c365ac329e5bc7bfaf2c"
     },
     {
       "file": "xaeroworldmap-forge-1.20.1-1.47.0.jar",
-      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/b5475fd4654431f95d207cb9c116f883a9942765/instances/crewsafio/mods/xaeroworldmap-forge-1.20.1-1.47.0.jar",
+      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/6e2e279b27681dd1cc1a9ac4195472daa755bdb0/instances/crewsafio/mods/xaeroworldmap-forge-1.20.1-1.47.0.jar",
       "sha256": "88c6d844163c95a94d92bc6d87d9011cc840bd6207c3099a81b113d4450a3f6b"
     },
     {
       "file": "yet_another_config_lib_v3-3.6.6+1.20.1-forge.jar",
-      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/b5475fd4654431f95d207cb9c116f883a9942765/instances/crewsafio/mods/yet_another_config_lib_v3-3.6.6%2B1.20.1-forge.jar",
+      "url": "https://raw.githubusercontent.com/dklslskdkdk-jpg/kazino-pack/6e2e279b27681dd1cc1a9ac4195472daa755bdb0/instances/crewsafio/mods/yet_another_config_lib_v3-3.6.6%2B1.20.1-forge.jar",
       "sha256": "bd05da3d9df29b914165583f1c6dfd918a138996447ff32c0418329824027a8f"
     }
   ],
