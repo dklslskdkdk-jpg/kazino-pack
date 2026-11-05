@@ -1,0 +1,31 @@
+name: Publish Kazino menu 2.1.5 visuals
+on:
+  push:
+    paths:
+      - '.github/workflows/buttons-kazino-menu.yml'
+permissions:
+  contents: write
+concurrency:
+  group: publicar-pack-kazino
+  cancel-in-progress: false
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Apply and verify exact menu artifact
+        run: python3 .github/kazino-menu-finalbuttons/apply.py
+      - name: Publish menu and matching Kazino manifest
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- mods
+          git commit -m 'Replace play button with smooth rounded design and guarantee original Kazino PNG'
+          MOD_COMMIT=$(git rev-parse HEAD)
+          MOD_COMMIT="$MOD_COMMIT" node -e "const fs=require('fs'),p=require('./.github/scripts/publish-pack.cjs').build(process.cwd(),process.env.GITHUB_REPOSITORY,process.env.MOD_COMMIT);if(p.mods.length!==11)throw Error('Unexpected mods');fs.writeFileSync('pack-auto.json',JSON.stringify(p,null,2)+'\n');"
+          git add -- pack-auto.json
+          git commit -m 'Publish updated Kazino menu hash'
+          git pull --rebase origin main
+          git push origin HEAD:main
