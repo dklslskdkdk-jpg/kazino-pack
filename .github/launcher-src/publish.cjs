@@ -1,10 +1,7 @@
 const fs=require('fs'),crypto=require('crypto'),cp=require('child_process');
 const envelope=JSON.parse(fs.readFileSync('.github/launcher-src/app-update.json','utf8')),data=Buffer.from(envelope.payload,'base64');
-const key='-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAA7tvH/gEhberzShs0/P80rRHIrANeBWYbhMmCAmRlcY=\n-----END PUBLIC KEY-----';
+const key='-----BEGIN PUBLIC KEY-----\\nMCowBQYDK2VwAyEAA7tvH/gEhberzShs0/P80rRHIrANeBWYbhMmCAmRlcY=\\n-----END PUBLIC KEY-----'.replace(/\\\\n/g,'\\n');
 if(!crypto.verify(null,data,key,Buffer.from(envelope.signature,'base64')))throw Error('Invalid update signature');
-const m=JSON.parse(data),repo=process.env.GITHUB_REPOSITORY;
-if(m.kind!=='blu-studio-app'||m.version!=='0.4.26'||m.url!==`https://github.com/${repo}/releases/download/v${m.version}/Bluu-Client.exe`)throw Error('Invalid release metadata');
-const run=args=>cp.execFileSync('gh',args,{stdio:'inherit'});
-run(['release','download','v'+m.version,'-R',repo,'-p','Bluu-Client.exe']);
-if(crypto.createHash('sha256').update(fs.readFileSync('Bluu-Client.exe')).digest('hex')!==m.sha256)throw Error('Binary digest mismatch');
-fs.copyFileSync('.github/launcher-src/app-update.json','app-update.json');run(['release','upload','v'+m.version,'app-update.json','--clobber','-R',repo]);run(['release','edit','v'+m.version,'--draft=false','--latest','-R',repo]);
+const m=JSON.parse(data),repo=process.env.GITHUB_REPOSITORY;if(m.kind!=='blu-studio-app'||m.version!=='0.4.26'||m.url!==`https://github.com/${repo}/releases/download/v${m.version}/Bluu-Client.exe`)throw Error('Invalid update metadata');
+const gh=args=>cp.execFileSync('gh',args,{maxBuffer:512*1024*1024});const releases=JSON.parse(gh(['api','repos/'+repo+'/releases?per_page=50']).toString());const release=releases.find(r=>r.tag_name==='v'+m.version&&r.assets.some(a=>a.name==='Bluu-Client.exe'&&a.digest==='sha256:'+m.sha256));if(!release)throw Error('No release matches the exact signed executable digest');const asset=release.assets.find(a=>a.name==='Bluu-Client.exe'&&a.digest==='sha256:'+m.sha256);const binary=gh(['api','repos/'+repo+'/releases/assets/'+asset.id,'-H','Accept: application/octet-stream']);if(binary.subarray(0,2).toString()!=='MZ'||crypto.createHash('sha256').update(binary).digest('hex')!==m.sha256)throw Error('Executable digest mismatch');fs.writeFileSync('Bluu-Client.exe',binary);
+gh(['api','--method','POST','https://uploads.github.com/repos/'+repo+'/releases/'+release.id+'/assets?name=app-update.json','-H','Content-Type: application/json','--input','.github/launcher-src/app-update.json']);gh(['api','--method','PATCH','repos/'+repo+'/releases/'+release.id,'-F','draft=false','-f','make_latest=true']);console.log('Published exact verified release '+release.id+' version '+m.version);
