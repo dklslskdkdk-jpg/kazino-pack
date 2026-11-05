@@ -19,7 +19,7 @@ jobs:
         run: node --test .github/launcher-src/release-mods-test.cjs
       - name: Test access decisions before any pack download
         run: node --test .github/launcher-src/access-test.cjs
-      - name: Test instance isolation, visibility, access and automatic installation
+      - name: Test instance access notice visibility and automatic installation
         run: node --test .github/launcher-src/instances-test.cjs
       - name: Test native Windows updater end to end
         run: node .github/launcher-src/windows-update-test.cjs
