@@ -15,6 +15,8 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
+      - name: Test invited-player session restoration and verified skin account picker
+        run: node --test .github/launcher-src/players-test.cjs .github/launcher-src/friend-session-test.cjs
       - name: Test release mod sources
         run: node --test .github/launcher-src/release-mods-test.cjs
       - name: Test access decisions before any pack download
