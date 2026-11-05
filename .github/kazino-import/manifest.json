@@ -1,0 +1,57 @@
+{
+  "zipSha256": "434db5e390adca4d68dbdcac0c923e00b3e1b35cb256e130eaa39c61b63fa9ba",
+  "mods": {
+    "CandadosYAuras-Forge-1.20.1-1.0.2.jar": {
+      "sha256": "3b9037ddc0b23c01aac518f38f5c336e61c130c105b209b7d554ba9dd3611661",
+      "size": 3807201
+    },
+    "CreeperPastel-Forge-1.20.1-1.1.3.jar": {
+      "sha256": "b9cd5e64d3204a4006be139e0fd8b1edd5307480c955f623d366f9d6b1d4884f",
+      "size": 134860
+    },
+    "TotemTung-Forge-1.20.1-1.4.2.jar": {
+      "sha256": "2bcd40aa403f7f4eac7493e39a384bb82ae6b712cb90c3936dbe23724341b943",
+      "size": 24072
+    },
+    "Kazino7-BLU-STUDIO-Forge-1.20.1-2.0.0.jar": {
+      "sha256": "57b041964012271ca532f5326e4ed85f10c6cf285eab93ec8400a6c08d353ea5",
+      "size": 911777
+    },
+    "creeperoverhaul-3.0.2-forge.jar": {
+      "source": "instances/crewsafio/mods/creeperoverhaul-3.0.2-forge.jar",
+      "sha256": "212eb2a2d767f54fbfbac2336c63fe2bd1aae4d827ab358da329a746358b6dd9",
+      "size": 1456860
+    },
+    "explosiveenhancement-1.2.0.jar": {
+      "source": "instances/crewsafio/mods/explosiveenhancement-1.2.0.jar",
+      "sha256": "aea3fd8c2b2b8cbcf522ae47d392af67d3f60ded48d4ebf0270e2a99f85b431a",
+      "size": 97476
+    },
+    "resourcefulconfig-forge-1.20.1-2.1.3.jar": {
+      "source": "instances/crewsafio/mods/resourcefulconfig-forge-1.20.1-2.1.3.jar",
+      "sha256": "c404b9e5cf8595427a72d4ca6ee5730289168762b463f169be3ae5dfe3727ded",
+      "size": 136923
+    },
+    "resourcefullib-forge-1.20.1-2.1.29.jar": {
+      "source": "instances/crewsafio/mods/resourcefullib-forge-1.20.1-2.1.29.jar",
+      "sha256": "b13afb95231d88e1caea5a045967e0fc291b29020b0d26ad39e6f9e9a551fee8",
+      "size": 432753
+    },
+    "geckolib-forge-1.20.1-4.8.4.jar": {
+      "source": "mods/geckolib-forge-1.20.1-4.8.4.jar",
+      "sha256": "c04abba4fd354dd8c0e8a732f1f05f4dca893d2e1d962b2ab128bbd411478747",
+      "size": 1038209
+    },
+    "morpher.jar": {
+      "source": "mods/morpher.jar",
+      "sha256": "7a22b31a6a8d1faab91d0dbd5c2e19b05f79359a1ff6f4cd3de1417be95b3274",
+      "size": 334512
+    },
+    "CrewSafio-Hearts-Forge-1.20.1-1.0.0.jar": {
+      "source": "mods/CrewSafio-Hearts-Forge-1.20.1-1.0.0.jar",
+      "sha256": "d3eb58ed3b5f1401f93737b329cbfcb8e0bcef17eb9a16717d017bf0d79d6d81",
+      "size": 15086
+    }
+  },
+  "parts": 41
+}
