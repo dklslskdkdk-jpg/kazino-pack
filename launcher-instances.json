@@ -49,7 +49,12 @@
         "mode": "closed",
         "message": "Kazino todavía no está disponible. El estudio avisará cuando puedas entrar.",
         "opensAt": null,
-        "allowed": []
+        "allowed": [
+          {
+            "uuid": "50f7d32e3d6a4f5c901aea9082c17240",
+            "name": "SluzzBeh"
+          }
+        ]
       }
     },
     {
