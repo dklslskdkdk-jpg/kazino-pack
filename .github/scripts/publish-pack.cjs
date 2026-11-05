@@ -7,7 +7,22 @@ function build(root,repository,commit,prefix=''){
  for(const [folder,ext]of [['mods','.jar'],['resourcepacks','.zip'],['shaderpacks','.zip']]){const dir=path.join(root,folder);pack[folder]=[];if(!fs.existsSync(dir))continue;if(!fs.lstatSync(dir).isDirectory()||fs.lstatSync(dir).isSymbolicLink())throw Error('Carpeta no permitida: '+folder);const seen=new Set();
   for(const name of fs.readdirSync(dir).sort()){if(name==='.gitkeep')continue;const file=path.join(dir,name),stat=fs.lstatSync(file);if(!stat.isFile()||stat.isSymbolicLink()||!/^[a-zA-Z0-9_()+. -]+\.(jar|zip)$/.test(name)||!name.endsWith(ext)||name.length>180||/^(con|prn|aux|nul|com[1-9]|lpt[1-9])\./i.test(name))throw Error('Archivo no permitido: '+folder+'/'+name);if(seen.has(name.toLowerCase()))throw Error('Nombre duplicado: '+name);seen.add(name.toLowerCase());const bytes=fs.readFileSync(file);if(bytes.length<4||bytes[0]!==0x50||bytes[1]!==0x4b)throw Error('No es un JAR/ZIP válido: '+name);pack[folder].push({file:name,url:'https://raw.githubusercontent.com/'+repository+'/'+commit+'/'+(prefix?prefix+'/':'')+folder+'/'+encodeURIComponent(name),sha256:crypto.createHash('sha256').update(bytes).digest('hex')});}
   if(pack[folder].length>1000)throw Error('Demasiados archivos en '+folder);
- }return pack;
+ }
+ const externalFile=path.join(root,'external-mods.json');
+ if(fs.existsSync(externalFile)){
+  const external=JSON.parse(fs.readFileSync(externalFile,'utf8'));
+  if(!Array.isArray(external)||external.length>1000)throw Error('Lista de mods externos inválida.');
+  const names=new Set(pack.mods.map(item=>item.file.toLowerCase()));
+  for(const item of external){
+   if(!item||typeof item.file!=='string'||!/^[a-zA-Z0-9_()+. -]+\.jar$/.test(item.file)||item.file.length>180||/^(con|prn|aux|nul|com[1-9]|lpt[1-9])\./i.test(item.file)||names.has(item.file.toLowerCase())||typeof item.sha256!=='string'||!/^[a-f0-9]{64}$/.test(item.sha256)||typeof item.url!=='string')throw Error('Mod externo inválido o duplicado.');
+   const url=new URL(item.url);
+   if(url.origin!=='https://github.com'||url.username||url.password||url.search||url.hash||!url.pathname.startsWith('/'+repository+'/releases/download/')||decodeURIComponent(url.pathname.split('/').pop())!==item.file)throw Error('URL de mod externo no autorizada.');
+   names.add(item.file.toLowerCase());pack.mods.push({file:item.file,url:item.url,sha256:item.sha256});
+  }
+  pack.mods.sort((a,b)=>a.file<b.file?-1:a.file>b.file?1:0);
+  if(pack.mods.length>1000)throw Error('Demasiados mods.');
+ }
+ return pack;
 }
 function directory(dir){if(fs.existsSync(dir)){const s=fs.lstatSync(dir);if(!s.isDirectory()||s.isSymbolicLink())throw Error('Carpeta de instancia no permitida.');}else fs.mkdirSync(dir,{recursive:true});}
 function publish(root,repository,commit){const result=build(root,repository,commit);fs.writeFileSync(path.join(root,'pack-auto.json'),JSON.stringify(result,null,2)+'\n');const file=path.join(root,'launcher-instances.json');if(!fs.existsSync(file))return [result];const catalog=JSON.parse(fs.readFileSync(file,'utf8'));if(catalog.schema!==1||!Array.isArray(catalog.instances)||catalog.instances.length>30)throw Error('Catálogo de instancias inválido.');const ids=new Set();for(const item of catalog.instances){if(!validId(item.id)||ids.has(item.id))throw Error('ID de instancia inválido o duplicado.');ids.add(item.id);}const output=[result];for(const id of ids){if(id==='kazino')continue;directory(path.join(root,'instances'));const dir=path.join(root,'instances',id);directory(dir);const mods=path.join(dir,'mods');if(!fs.existsSync(mods)){directory(mods);fs.writeFileSync(path.join(mods,'.gitkeep'),'');}const pack=build(dir,repository,commit,'instances/'+id);fs.writeFileSync(path.join(dir,'pack-auto.json'),JSON.stringify(pack,null,2)+'\n');output.push(pack);}return output;}

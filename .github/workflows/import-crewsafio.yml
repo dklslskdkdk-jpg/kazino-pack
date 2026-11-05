@@ -1,0 +1,57 @@
+name: Importar los 74 mods de CrewSafio
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/import-crewsafio.yml']
+  release:
+    types: [published]
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: publicar-pack-kazino
+  cancel-in-progress: false
+jobs:
+  preparar:
+    if: github.event_name == 'push'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Preparar carga del ZIP autorizado
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          if ! gh release view crewsafio-mods-20261104; then
+            gh release create crewsafio-mods-20261104 --target main --draft --title 'CrewSafio - 74 mods de Blu' --notes 'Adjunta el archivo mods(9).zip renombrado a mods.zip y pulsa Publish release. La importación comprueba el SHA256 exacto del ZIP, reemplaza los mods de CrewSafio y genera pack-auto.json. Requiere Bluu Client 0.4.24 para descargar el mod de más de 100 MB desde Releases.'
+          fi
+  importar:
+    if: github.repository == 'dklslskdkdk-jpg/kazino-pack' && (github.event_name == 'workflow_dispatch' || github.event.release.tag_name == 'crewsafio-mods-20261104')
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Descargar el ZIP aprobado
+        run: |
+          mkdir -p "$RUNNER_TEMP/crewsafio-import"
+          gh release download crewsafio-mods-20261104 --repo "$GITHUB_REPOSITORY" --pattern mods.zip --dir "$RUNNER_TEMP/crewsafio-import"
+      - name: Verificar e importar sin ejecutar los mods
+        run: python .github/scripts/import-crewsafio.py
+      - name: Publicar carpeta y manifiestos
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- instances/crewsafio/mods instances/crewsafio/external-mods.json
+          if ! git diff --cached --quiet; then git commit -m 'Reemplazar CrewSafio por los 74 mods aprobados'; fi
+          export GITHUB_SHA="$(git rev-parse HEAD)"
+          node .github/scripts/publish-pack.cjs
+          git add -- pack-auto.json instances
+          if ! git diff --cached --quiet; then git commit -m 'Publicar manifiestos verificados de CrewSafio'; fi
+          git pull --rebase origin main
+          git push origin HEAD:main
