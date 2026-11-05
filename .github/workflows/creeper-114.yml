@@ -1,0 +1,37 @@
+name: Actualizar CreeperPastel de Kazino a 1.1.4
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/creeper-114.yml']
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: publicar-pack-kazino
+  cancel-in-progress: false
+jobs:
+  publicar:
+    if: github.repository == 'dklslskdkdk-jpg/kazino-pack' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verificar y sustituir CreeperPastel
+        run: python3 .github/creeper-114/import.py
+      - name: Publicar mod y descarga del launcher
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- mods/CreeperPastel-Forge-1.20.1-1.1.3.jar mods/CreeperPastel-Forge-1.20.1-1.1.4.jar
+          git commit -m 'Actualizar CreeperPastel de Kazino a 1.1.4'
+          PACK_COMMIT=$(git rev-parse HEAD)
+          PACK_COMMIT="$PACK_COMMIT" node -e "const fs=require('fs'),p=require('./.github/scripts/publish-pack.cjs').build(process.cwd(),process.env.GITHUB_REPOSITORY,process.env.PACK_COMMIT);fs.writeFileSync('pack-auto.json',JSON.stringify(p,null,2)+'\n');"
+          git add -- pack-auto.json
+          git commit -m 'Publicar descarga verificada de CreeperPastel 1.1.4'
+          git pull --rebase origin main
+          git push origin HEAD:main
