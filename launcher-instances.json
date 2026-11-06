@@ -51,7 +51,7 @@
       },
       "access": {
         "schema": 1,
-        "mode": "closed",
+        "mode": "invited",
         "message": "Kazino todavía no está disponible. El estudio avisará cuando puedas entrar.",
         "opensAt": null,
         "allowed": [
