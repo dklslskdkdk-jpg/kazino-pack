@@ -103,7 +103,7 @@
       },
       "access": {
         "schema": 1,
-        "mode": "open",
+        "mode": "closed",
         "message": "CREW SAFIO todavía no está disponible. El estudio avisará cuando puedas entrar.",
         "opensAt": null,
         "allowed": []
